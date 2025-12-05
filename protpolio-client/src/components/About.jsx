@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import img from '../assets/favicon (1).jpg';
+import img from '../assets/g5.jpeg';
 const About = () => {
     return (
         <section id="about" className="py-20 bg-secondary text-white">
