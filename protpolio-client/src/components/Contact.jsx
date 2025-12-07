@@ -13,7 +13,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                    <h2 className="flex items-center text-3xl md:text-4xl font-bold mb-4"><FaPhone className="mr-2" /> Get In Touch</h2>
                     <div className="w-20 h-1 bg-accent mx-auto rounded"></div>
                 </motion.div>
 
@@ -31,7 +31,7 @@ const Contact = () => {
                         </p>
 
                         <div className="flex items-center gap-4 text-gray-300">
-                            <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-accent">
+                            <div className="w-12 h-12 icon-bg flex items-center justify-center">
                                 <FaEnvelope size={20} />
                             </div>
                             <div>
@@ -41,7 +41,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex items-center gap-4 text-gray-300">
-                            <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-accent">
+                            <div className="w-12 h-12 icon-bg flex items-center justify-center">
                                 <FaPhone size={20} />
                             </div>
                             <div>
@@ -51,7 +51,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex items-center gap-4 text-gray-300">
-                            <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-accent">
+                            <div className="w-12 h-12 icon-bg flex items-center justify-center">
                                 <FaMapMarkerAlt size={20} />
                             </div>
                             <div>

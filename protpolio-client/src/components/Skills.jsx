@@ -17,7 +17,7 @@ const skills = [
 const Skills = () => {
     return (
         <section id="skills" className="py-20 bg-secondary text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 glass p-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const Skills = () => {
                             whileHover={{ scale: 1.05 }}
                             className="bg-primary p-6 rounded-xl flex flex-col items-center justify-center gap-4 shadow-lg hover:shadow-accent/20 transition-all duration-300 border border-white/5"
                         >
-                            {skill.icon}
+                            <span className="icon-bg mr-2">{skill.icon}</span>
                             <span className="font-medium text-lg">{skill.name}</span>
                         </motion.div>
                     ))}

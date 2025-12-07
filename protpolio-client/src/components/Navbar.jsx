@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+    const toggleTheme = () => {
+        const newMode = !darkMode;
+        setDarkMode(newMode);
+        document.documentElement.dataset.theme = newMode ? 'dark' : 'light';
+    };
 
     const navLinks = [
         { name: 'Home', href: '#home' },
@@ -25,6 +31,9 @@ const Navbar = () => {
                     >
                         Portfolio
                     </motion.div>
+                    <button onClick={toggleTheme} className="ml-4 text-gray-300 hover:text-accent focus:outline-none">
+                        {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+                    </button>
 
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">

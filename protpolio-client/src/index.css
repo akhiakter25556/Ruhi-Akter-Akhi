@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
-@theme {
-  --color-primary: #0f172a;
-  --color-secondary: #1e293b;
-  --color-accent: #38bdf8;
+/* Light theme variables */
+:root {
+  --color-primary: hsl(220, 30%, 10%);
+  --color-secondary: hsl(220, 30%, 15%);
+  --color-accent: hsl(200, 80%, 60%);
+  --color-bg: hsl(220, 30%, 12%);
   --font-sans: 'Inter', sans-serif;
 }
 
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --color-primary: hsl(220, 30%, 5%);
+  --color-secondary: hsl(220, 30%, 8%);
+  --color-accent: hsl(200, 80%, 70%);
+  --color-bg: hsl(220, 30%, 6%);
+}
+
 html {
+  background-color: var(--color-bg);
+  transition: background-color 0.3s ease;
   scroll-behavior: smooth;
 }
 
@@ -15,4 +27,42 @@ body {
   background-color: var(--color-primary);
   color: white;
   font-family: var(--font-sans);
+}
+
+/* Gradient utilities */
+.bg-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+/* Hero background */
+.hero-bg {
+  background-image: url('/src/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Icon background utility */
+.icon-bg {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }

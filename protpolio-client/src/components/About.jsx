@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaUser, FaBriefcase } from 'react-icons/fa';
 import img from '../assets/g5.jpeg';
 const About = () => {
     return (
-        <section id="about" className="py-20 bg-secondary text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="about" className="relative py-20 bg-gradient text-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 glass p-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -12,7 +13,7 @@ const About = () => {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                    <h2 className="flex items-center text-3xl md:text-4xl font-bold mb-4"><span className="icon-bg mr-2"><FaUser /></span> About Me</h2>
                     <div className="w-20 h-1 bg-accent mx-auto rounded"></div>
                 </motion.div>
 
@@ -35,7 +36,7 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
-                        <h3 className="text-2xl font-bold mb-4">Passionate Full Stack Developer</h3>
+                        <h3 className="flex items-center text-2xl font-bold mb-4"><span className="icon-bg mr-2"><FaBriefcase /></span> Passionate Full Stack Developer</h3>
                         <p className="text-gray-300 mb-6 leading-relaxed">
                             I am a dedicated developer with a passion for creating beautiful and functional web applications.
                             With expertise in modern technologies like React, Node.js, and Tailwind CSS, I turn ideas into reality.
