@@ -39,35 +39,52 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="text-5xl md:text-7xl font-bold text-white mb-6"
                 >
-                    Hi, I'm <span className="text-accent">Developer</span>
+                    Hi, I'm <span className="text-accent">Akhi Akter</span>
                 </motion.h1>
+
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1, duration: 0.8 }}
+                    className="text-2xl md:text-3xl font-semibold text-accent mb-4"
+                >
+                    Full Stack Developer
+                </motion.h2>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.8 }}
-                    className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
+                    className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
                 >
-                    Building modern web experiences with React and Tailwind CSS.
+                    Passionate about creating innovative web solutions with modern technologies. 
+                    Specializing in React, Node.js, and full-stack development to bring ideas to life.
                 </motion.p>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4, duration: 0.8 }}
-                    className="flex justify-center gap-4"
+                    className="flex flex-col sm:flex-row justify-center gap-4"
                 >
                     <a
                         href="#projects"
-                        className="px-8 py-3 bg-accent text-primary font-bold rounded-full hover:bg-accent/90 transition-transform hover:scale-105"
+                        className="px-8 py-3 bg-accent text-primary font-bold rounded-full hover:bg-accent/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/25"
                     >
-                        View Work
+                        View My Work
+                    </a>
+                    <a
+                        href="/resume.pdf"
+                        download
+                        className="px-8 py-3 border-2 border-accent text-accent font-bold rounded-full hover:bg-accent hover:text-primary transition-all duration-300 hover:scale-105"
+                    >
+                        Download Resume
                     </a>
                     <a
                         href="#contact"
-                        className="px-8 py-3 border border-accent text-accent font-bold rounded-full hover:bg-accent/10 transition-transform hover:scale-105"
+                        className="px-8 py-3 bg-transparent border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-105"
                     >
-                        Contact Me
+                        Get In Touch
                     </a>
                 </motion.div>
             </div>

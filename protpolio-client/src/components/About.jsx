@@ -38,26 +38,47 @@ const About = () => {
                     >
                         <h3 className="flex items-center text-2xl font-bold mb-4"><span className="icon-bg mr-2"><FaBriefcase /></span> Passionate Full Stack Developer</h3>
                         <p className="text-gray-300 mb-6 leading-relaxed">
-                            I am a dedicated developer with a passion for creating beautiful and functional web applications.
-                            With expertise in modern technologies like React, Node.js, and Tailwind CSS, I turn ideas into reality.
-                            I love solving complex problems and learning new things every day.
+                            I'm a dedicated full-stack developer with 3+ years of experience creating scalable web applications. 
+                            My expertise spans modern JavaScript frameworks, backend technologies, and database management. 
+                            I'm passionate about writing clean, efficient code and staying updated with the latest industry trends.
                         </p>
-                        <div className="grid grid-cols-2 gap-4 text-gray-300">
-                            <div>
-                                <span className="font-bold text-accent block">Name:</span>
-                                Akhi Akter
+                        <p className="text-gray-300 mb-6 leading-relaxed">
+                            When I'm not coding, I enjoy contributing to open-source projects, learning new technologies, 
+                            and sharing knowledge with the developer community. I believe in continuous learning and 
+                            always strive to deliver high-quality solutions that exceed expectations.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
+                            <div className="space-y-4">
+                                <div>
+                                    <span className="font-bold text-accent block">Name:</span>
+                                    <span className="text-lg">Akhi Akter</span>
+                                </div>
+                                <div>
+                                    <span className="font-bold text-accent block">Email:</span>
+                                    <span className="text-lg">ruhiakterakhi@gmail.com</span>
+                                </div>
                             </div>
-                            <div>
-                                <span className="font-bold text-accent block">Email:</span>
-                                ruhiakterakhi@gmail.com
+                            <div className="space-y-4">
+                                <div>
+                                    <span className="font-bold text-accent block">Location:</span>
+                                    <span className="text-lg">Raypur Lokkhipur, Bangladesh</span>
+                                </div>
+                                <div>
+                                    <span className="font-bold text-accent block">Status:</span>
+                                    <span className="text-lg text-green-400">Available for Projects</span>
+                                </div>
                             </div>
-                            <div>
-                                <span className="font-bold text-accent block">Location:</span>
-                                Raypur Lokkhipur
+                        </div>
+                        
+                        <div className="mt-8 flex flex-wrap gap-4">
+                            <div className="bg-primary px-4 py-2 rounded-lg border border-accent/20">
+                                <span className="text-accent font-semibold">3+</span> Years Experience
                             </div>
-                            <div>
-                                <span className="font-bold text-accent block">Availability:</span>
-                                Open to work
+                            <div className="bg-primary px-4 py-2 rounded-lg border border-accent/20">
+                                <span className="text-accent font-semibold">50+</span> Projects Completed
+                            </div>
+                            <div className="bg-primary px-4 py-2 rounded-lg border border-accent/20">
+                                <span className="text-accent font-semibold">100%</span> Client Satisfaction
                             </div>
                         </div>
                     </motion.div>
