@@ -1,0 +1,133 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2000
+>>
+stream
+BT
+/F1 16 Tf
+50 750 Td
+(AKHI AKTER) Tj
+0 -20 Td
+/F1 12 Tf
+(Full Stack Developer) Tj
+0 -30 Td
+/F1 10 Tf
+(Email: akhiakterherpower70@gmail.com) Tj
+0 -15 Td
+(Phone: 01815225556) Tj
+0 -15 Td
+(Address: Raypur, Lokkhipur, Bangladesh) Tj
+0 -15 Td
+(LinkedIn: https://www.linkedin.com/in/akhi-akter-578880396/) Tj
+0 -15 Td
+(GitHub: https://github.com/akhiakter25556) Tj
+0 -30 Td
+/F1 12 Tf
+(CAREER OBJECTIVE) Tj
+0 -20 Td
+/F1 10 Tf
+(Full Stack Developer skilled in building scalable, responsive web applications) Tj
+0 -15 Td
+(using the MERN and Next.js ecosystems. Proficient in React.js, Next.js, Node.js,) Tj
+0 -15 Td
+(and MongoDB, with hands-on experience creating secure, full-stack projects.) Tj
+0 -30 Td
+/F1 12 Tf
+(TECHNICAL SKILLS) Tj
+0 -20 Td
+/F1 10 Tf
+(Frontend: HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React.js, Next.js) Tj
+0 -15 Td
+(Backend: Node.js, Express.js, REST API development) Tj
+0 -15 Td
+(Database: MongoDB, Mongoose) Tj
+0 -15 Td
+(Authentication: JWT, NextAuth, OAuth, Firebase) Tj
+0 -15 Td
+(Tools: Git, GitHub, VS Code, IntelliJ, Vercel, Netlify) Tj
+0 -30 Td
+/F1 12 Tf
+(PROJECTS) Tj
+0 -20 Td
+/F1 10 Tf
+(1. FreelancerMarketer \(MERN\)) Tj
+0 -15 Td
+(Tech: React, MongoDB, Express.js, Node.js) Tj
+0 -15 Td
+(A full-featured platform for user registration and car rental management) Tj
+0 -20 Td
+(2. E-commerce With Next.js) Tj
+0 -15 Td
+(Tech: Next.js, MongoDB, Express, Node.js, NextAuth) Tj
+0 -15 Td
+(Live: https://e-commerch-client.vercel.app/) Tj
+0 -20 Td
+(3. Portfolio Website) Tj
+0 -15 Td
+(Tech: React, Tailwind CSS, Framer Motion) Tj
+0 -15 Td
+(Live: https://wondrous-treacle-6f0d09.netlify.app/) Tj
+0 -30 Td
+/F1 12 Tf
+(EDUCATION) Tj
+0 -20 Td
+/F1 10 Tf
+(Raipur Govt University - Graduated: February 2025) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000002326 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+2404
+%%EOF
