@@ -84,7 +84,7 @@ const Contact = () => {
                                 <div>
                                     <span className="block text-sm text-gray-500">WhatsApp</span>
                                     <a href="https://wa.me/8801234567890" className="text-lg font-medium hover:text-accent transition-colors">
-                                        +880 123 456 7890
+                                        +880 1815225556
                                     </a>
                                 </div>
                             </div>

@@ -50,7 +50,8 @@ Key Contributions:
 3. ContestHub (Coding Contest Management Platform)
 Tech: React, Tailwind CSS, Node.js, Express, MongoDB, JWT
 
-4. Portfolio Website
+4. 
+ContestHub Website
 Tech: React, Tailwind CSS, Framer Motion
 Live: https://wondrous-treacle-6f0d09.netlify.app/
 
@@ -86,7 +87,7 @@ Graduated: February 2025
                     <h1 className="text-4xl font-bold text-blue-800 mb-2">AKHI AKTER</h1>
                     <h2 className="text-xl text-blue-600 mb-4">Full Stack Developer</h2>
                     <div className="flex flex-wrap justify-center gap-4 text-sm">
-                        <span>📧 akhiakterherpower70@gmail.com</span>
+                        <span>📧 ruhiakterakhi@gmail.com</span>
                         <span>📱 01815225556</span>
                         <span>📍 Raypur, Lokkhipur, Bangladesh</span>
                         <span>💼 LinkedIn: linkedin.com/in/akhi-akter-578880396</span>
@@ -183,7 +184,7 @@ Graduated: February 2025
                         </div>
 
                         <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-600">
-                            <h4 className="font-bold text-blue-700 text-lg mb-2">4. Portfolio Website</h4>
+                            <h4 className="font-bold text-blue-700 text-lg mb-2">4. ContestHub</h4>
                             <p className="text-blue-600 italic mb-2">Tech: React, Tailwind CSS, Framer Motion</p>
                             <p className="mb-2">Live: https://wondrous-treacle-6f0d09.netlify.app/</p>
                             <p>Modern, responsive portfolio website with smooth animations and professional design.</p>

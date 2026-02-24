@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import jsPDF from 'jspdf';
-import img from '../assets/g5.jpeg';
+import img from '../assets/profationalimg.jpg';
 
 const Hero = () => {
     const handleViewResume = () => {
@@ -268,7 +268,8 @@ const Hero = () => {
                 <a href="https://skills-hub-murex.vercel.app/" target="_blank">Live Demo</a>
                 <a href="https://github.com/akhiakter25556" target="_blank">GitHub</a>
             </div>
-            <p>A comprehensive skills development platform where users can learn, practice, and showcase their abilities. Features interactive learning modules, progress tracking, and skill assessments.</p>
+            <p>A comprehensive skills development platform where users can learn, practice, and showcase 
+            their abilities. Features interactive learning modules, progress tracking, and skill assessments.</p>
         </div>
 
         <div class="project">
@@ -340,7 +341,7 @@ const Hero = () => {
         // Contact Information
         doc.setFontSize(10);
         doc.setTextColor(0, 0, 0);
-        doc.text('Email: akhiakterherpower70@gmail.com | Phone: 01815225556', 105, 55, { align: 'center' });
+        doc.text('Email: ruhiakterakhi@gmail.com | Phone: 01815225556', 105, 55, { align: 'center' });
         doc.text('Address: Raypur, Lokkhipur, Bangladesh', 105, 62, { align: 'center' });
         doc.text('LinkedIn: linkedin.com/in/akhi-akter-578880396 | GitHub: github.com/akhiakter25556', 105, 69, { align: 'center' });
         
@@ -544,37 +545,48 @@ const Hero = () => {
                             Specializing in React, Node.js, and full-stack development to bring ideas to life.
                         </motion.p>
 
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4, duration: 0.8 }}
-                            className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
-                        >
-                            <a
-                                href="#projects"
-                                className="px-8 py-3 bg-accent text-primary font-bold rounded-full hover:bg-accent/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/25"
-                            >
-                                View My Work
-                            </a>
-                            <button
-                                onClick={handleViewResume}
-                                className="px-8 py-3 border-2 border-accent text-accent font-bold rounded-full hover:bg-accent hover:text-primary transition-all duration-300 hover:scale-105"
-                            >
-                                View Resume
-                            </button>
-                            <button
-                                onClick={handleDownloadResume}
-                                className="px-8 py-3 bg-transparent border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-105"
-                            >
-                                Download PDF
-                            </button>
-                            <a
-                                href="#contact"
-                                className="px-8 py-3 bg-transparent border-2 border-purple-500/30 text-purple-300 font-bold rounded-full hover:bg-purple-500/10 transition-all duration-300 hover:scale-105"
-                            >
-                                Get In Touch
-                            </a>
-                        </motion.div>
+
+<motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.4, duration: 0.8 }}
+    className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
+>
+    <a
+        href="#projects"
+        className="px-8 py-3 border-2 border-accent bg-gradient-to-r from-accent
+         to-purple-500 text-primary font-bold rounded-full shadow-md hover:scale-105 hover:shadow-lg hover:shadow-accent/30 transition-all duration-300"
+    >
+        View My Work
+    </a>
+
+
+
+
+    <button
+        onClick={handleViewResume}
+        className="px-8 py-3 border-2 border-accent bg-transparent text-accent font-bold rounded-full hover:bg-accent hover:text-primary hover:scale-105 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300"
+    >
+        View Resume
+    </button>
+
+    <button
+        onClick={handleDownloadResume}
+        className="px-8 py-3 border-2 border-white/30 text-white rounded-full font-bold bg-transparent hover:bg-white/10 hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20 transition-all duration-300"
+    >
+        Download PDF
+    </button>
+
+    <a
+        href="#contact"
+        className="px-8 py-3 border-2 border-purple-500 text-purple-300 font-bold rounded-full bg-transparent hover:bg-purple-500/20 hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
+    >
+        Get In Touch
+    </a>
+</motion.div>
+
+
+
                     </motion.div>
 
                     {/* Profile Image */}
