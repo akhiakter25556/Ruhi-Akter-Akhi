@@ -1,152 +1,80 @@
-import { motion } from "framer-motion";
-import { FaUser, FaBriefcase } from "react-icons/fa";
+import { FaUser, FaDownload, FaArrowRight } from 'react-icons/fa';
+import { aboutData } from '../data/aboutData';
+import { resumeData } from '../data/resumeData';
 
 const About = () => {
   return (
-    <section id="about" className="relative py-24 bg-gradient text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-24 bg-slate-950 text-white">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[360px_minmax(0,1fr)] items-start">
+          <div className="mx-auto w-full max-w-[360px]">
+            <div className="rounded-[2rem] border border-slate-700 bg-slate-900 overflow-hidden shadow-lg">
+              <img
+                src="/anime_style_akhi.png"
+                alt="Cartoon illustration of Akhi Akter"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
 
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="flex items-center gap-3 text-3xl md:text-4xl font-semibold">
-            <span className="icon-bg p-3">
-              <FaUser />
-            </span>
-            About Me
-          </h2>
-          <p className="text-gray-400 max-w-xl mt-3">
-            A snapshot of my professional background, experience, and approach
-            to building digital solutions.
-          </p>
-        </motion.div>
-
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-
-          {/* Main About Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="md:col-span-2 bg-primary/50 backdrop-blur-xl 
-                       border border-white/10 rounded-2xl p-8"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="icon-bg p-3">
-                <FaBriefcase />
-              </span>
-              <h3 className="text-2xl font-semibold">
-                Full Stack Developer
-              </h3>
+          <div className="space-y-8">
+            <div className="space-y-5">
+              <div className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-sm text-slate-300">
+                <FaUser className="text-blue-400" />
+                About Me
+              </div>
+              <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                {aboutData.subtitle}
+              </h2>
+              <p className="max-w-2xl text-base leading-8 text-slate-300">
+                {aboutData.summary}
+              </p>
             </div>
 
-            <p className="text-gray-300 leading-relaxed mb-4">
-              I am a professional Full Stack Developer with{" "}
-              <span className="text-accent font-medium">
-                3+ years of experience
-              </span>{" "}
-              building scalable, secure, and user-focused web applications.
-            </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl border border-slate-700 bg-slate-900 p-5">
+                <p className="text-sm leading-6 text-slate-300">{aboutData.highlights[0]}</p>
+              </div>
+              <div className="rounded-3xl border border-slate-700 bg-slate-900 p-5">
+                <p className="text-sm leading-6 text-slate-300">{aboutData.highlights[1]}</p>
+              </div>
+            </div>
 
-            <p className="text-gray-300 leading-relaxed">
-              My work philosophy centers around clean architecture, performance
-              optimization, and long-term maintainability.
-            </p>
-          </motion.div>
-
-          {/* Info Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-            className="md:col-span-2 bg-primary/40 backdrop-blur-xl 
-                       border border-white/10 rounded-2xl p-8"
-          >
-            <div className="space-y-5 text-gray-300">
-              <div>
-                <span className="text-xs uppercase text-gray-400">Name</span>
-                <p className="text-lg text-white">Akhi Akter</p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl border border-slate-700 bg-slate-900 p-6">
+                <h3 className="text-lg font-semibold text-white">Career Highlights</h3>
+                <div className="mt-4 space-y-3">
+                  {aboutData.stats.map((stat) => (
+                    <div key={stat.label} className="rounded-3xl bg-slate-950/80 p-4">
+                      <div className={`text-3xl font-semibold ${stat.accent}`}>{stat.value}</div>
+                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-slate-500">{stat.label}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <div>
-                <span className="text-xs uppercase text-gray-400">Email</span>
-                <p>ruhiakterakhi@gmail.com</p>
-              </div>
-
-              <div>
-                <span className="text-xs uppercase text-gray-400">Location</span>
-                <p>Raypur, Lokkhipur, Bangladesh</p>
-              </div>
-
-              <div>
-                <span className="text-xs uppercase text-gray-400">
-                  Availability
-                </span>
-
-                {/* Clickable Live Project */}
+              <div className="rounded-3xl border border-slate-700 bg-slate-900 p-6">
+                <h3 className="text-lg font-semibold text-white">Quick Info</h3>
+                <div className="mt-4 space-y-4 text-slate-300">
+                  {aboutData.details.map((detail) => (
+                    <div key={detail.label}>
+                      <p className="text-xs uppercase tracking-[0.2em] text-slate-500">{detail.label}</p>
+                      <p className="mt-1 text-base text-white">{detail.value}</p>
+                    </div>
+                  ))}
+                </div>
                 <a
-                  href="https://contesthub-omega.vercel.app/"
+                  href={resumeData.googleDriveResume}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-1 
-                             text-green-400 font-medium
-                             hover:text-green-300 transition-colors"
+                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-blue-500 bg-blue-500/10 px-5 py-3 text-sm font-semibold text-blue-300 transition hover:bg-blue-500/20"
                 >
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
-                  </span>
-                  Open for Projects
+                  <FaDownload />
+                  View Full Resume
                 </a>
               </div>
             </div>
-          </motion.div>
-
-          {/* Stats Card */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="md:col-span-4 bg-primary/35 backdrop-blur-xl 
-                       border border-white/10 rounded-2xl p-8"
-          >
-            <div className="grid grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-3xl font-semibold text-accent">3+</div>
-                <p className="text-xs text-gray-400 mt-1">
-                  Years Experience
-                </p>
-              </div>
-
-              <div>
-                <div className="text-3xl font-semibold text-purple-400">
-                  50+
-                </div>
-                <p className="text-xs text-gray-400 mt-1">
-                  Projects Completed
-                </p>
-              </div>
-
-              <div>
-                <div className="text-3xl font-semibold text-green-400">
-                  100%
-                </div>
-                <p className="text-xs text-gray-400 mt-1">
-                  Client Satisfaction
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
+          </div>
         </div>
       </div>
     </section>
