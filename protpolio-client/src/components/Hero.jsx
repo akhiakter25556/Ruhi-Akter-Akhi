@@ -1,22 +1,20 @@
 import { motion } from 'framer-motion';
 import img from '../assets/profationalimg.jpg';
-import { resumeData, generateResumeHTML } from '../data/resumeData';
-import { generateResumePDF } from '../utils/generatePDF';
+import { resumeData } from '../data/resumeData';
 
 const Hero = () => {
+    const getDriveDownloadUrl = (url) => {
+        const match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)\//);
+        if (!match) return url;
+        return `https://drive.google.com/uc?export=download&id=${match[1]}`;
+    };
+
     const handleViewResume = () => {
-        const resumeHTML = generateResumeHTML(resumeData);
-        const newWindow = window.open('', '_blank');
-        newWindow.document.write(resumeHTML);
-        newWindow.document.close();
+        window.open(resumeData.googleDriveResume, '_blank');
     };
 
     const handleDownloadResume = () => {
-        generateResumePDF(resumeData);
-    };
-
-    const handleViewGoogleDriveResume = () => {
-        window.open(resumeData.googleDriveResume, '_blank');
+        window.open(getDriveDownloadUrl(resumeData.googleDriveResume), '_blank');
     };
 
     // Animation variants for consistent, reusable animations
@@ -171,19 +169,6 @@ const Hero = () => {
                             >
                                 Download PDF
                             </motion.button>
-
-                            {/* View Full Resume Button */}
-                            <motion.a
-                                variants={itemVariants}
-                                href={resumeData.googleDriveResume}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`${buttonBaseClass} border-blue-400 text-blue-300 bg-transparent hover:bg-blue-500/20 hover:text-white hover:shadow-lg hover:shadow-blue-500/25`}
-                                role="button"
-                                aria-label="View full resume on Google Drive"
-                            >
-                                📄 Full Resume
-                            </motion.a>
 
                             {/* Get in Touch Button */}
                             <motion.a
