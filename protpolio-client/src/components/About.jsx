@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import { SiAdobephotoshop, SiAdobepremierepro, SiAdobeillustrator, SiFigma } from 'react-icons/si';

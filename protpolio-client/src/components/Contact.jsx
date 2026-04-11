@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
